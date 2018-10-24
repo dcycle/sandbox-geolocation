@@ -50,8 +50,7 @@ if ("geolocation" in navigator) {
     console.error('An error has occured while retrieving' +
                   'location', error_message)
     ipLookUp()
-  }
-});
+  });
 } else {
   // geolocation is not supported
   // get your location some other way
