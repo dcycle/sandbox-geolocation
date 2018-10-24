@@ -1,4 +1,3 @@
-/* See https://medium.com/@adeyinkaadegbenro/how-to-detect-the-location-of-your-websites-visitor-using-javascript-92f9e91c095f*/
 if ("geolocation" in navigator) {
   // check if geolocation is supported/enabled on current browser
   navigator.geolocation.getCurrentPosition(
@@ -9,8 +8,7 @@ if ("geolocation" in navigator) {
    },
   function error(error_message) {
     // for when getting location results in an error
-    console.error('An error has occured while retrieving
-                  location', error_message)
+    console.error('An error has occured while retrieving location', error_message)
   }  
 });
 } else {
