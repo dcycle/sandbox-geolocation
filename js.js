@@ -23,7 +23,7 @@ function getAddress(latitude, longitude) {
 
   $.ajax('https://maps.googleapis.com/maps/api/geocode/json?' +
       'latlng=' + latitude + ',' + longitude + '&key=' +
-      'api_key_locked_down_by_domain')
+      api_key_locked_down_by_domain)
     .then(
       function success(response) {
         console.log('User\'s Address Data is ', response)
